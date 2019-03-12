@@ -13,11 +13,14 @@ def connect_to_db():
     con = pyodbc.connect(
         r'DRIVER={ODBC Driver 17 for SQL Server};' +
         'SERVER={};database={};UID={};PWD={};'.format(server, db, user, pw))
-
     return con
 
 
 def close_db_connection(conn):
+    """
+    Closes SQL database connection withing try block.
+    :param conn: Open connection to close
+    """
     try:
         conn.close()
     except Exception as e:
@@ -25,7 +28,7 @@ def close_db_connection(conn):
 
 
 conn = connect_to_db()
-sql_query = 'SELECT * FROM RainfallMeasurements'
+sql_query = "SELECT * FROM RainfallMeasurements"
 df = pd.read_sql(sql_query, conn)
 print(df.head())
 
@@ -45,4 +48,4 @@ print(wdf.head())
 plt.plot(wdf['height in metres'])
 plt.show()
 
-conn.close()
+close_db_connection(conn)

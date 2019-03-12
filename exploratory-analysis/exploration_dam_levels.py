@@ -4,6 +4,12 @@ import seaborn as sns
 
 
 def load_dam_data(file):
+    """
+    Function loads a given csv file into a Pandas DataFrame,
+    removes unnecessary data, and returns it.
+    :param file: The dam levels measurement file
+    :return: The dam levels DataFrame
+    """
     df = pd.read_csv(file, encoding='latin-1')
     # drop unnecessary columns - dam_stats_key
     df = df.drop('dam_stats_key', axis=1)
