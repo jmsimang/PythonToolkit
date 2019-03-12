@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d051b83-7f99-48a0-a317-f70583c96c90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f79684b0-a59f-423f-ba4c-c2bb1372f81d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f79684b0-a59f-423f-ba4c-c2bb1372f81d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f79684b0-a59f-423f-ba4c-c2bb1372f81d/storage_v2/_src_/database/WaterCrisisDB.mOoSUA/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f79684b0-a59f-423f-ba4c-c2bb1372f81d/storage_v2/_src_/database/WaterCrisisDB.mOoSUA/schema/dbo.sYMBAA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exploratory-analysis/exploration_dam_levels.py" beforeDir="false" afterPath="$PROJECT_DIR$/exploratory-analysis/exploration_dam_levels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jmsimang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/jmsimang.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exploratory-analysis/exploration_dam_levels.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="960">
@@ -96,6 +93,18 @@
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="342">
+                <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -151,6 +160,7 @@
         <option value="$PROJECT_DIR$/useful_functions/plot_dam_levels.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/exploratory-analysis/exploration_dam_levels.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -418,7 +428,7 @@
       <workItem from="1551882790135" duration="958000" />
       <workItem from="1551883864445" duration="621000" />
       <workItem from="1552123576212" duration="3203000" />
-      <workItem from="1552378296459" duration="14241000" />
+      <workItem from="1552378296459" duration="15600000" />
     </task>
     <task id="LOCAL-00001" summary="Added recursion and searching exercises">
       <created>1551366630305</created>
@@ -438,7 +448,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90994000" />
+    <option name="totallyTimeSpent" value="92353000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="26" width="1372" height="719" extended-state="6" />
@@ -458,12 +468,12 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294702" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.33112583" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3294702" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="11" visible="true" weight="0.22847682" />
+      <window_info anchor="bottom" id="Python Console" order="11" visible="true" weight="0.22847682" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.37537766" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.37537766" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="Database" order="5" weight="0.2439577" />
       <window_info anchor="right" id="R Graphics" order="6" />
@@ -712,6 +722,16 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="342">
+            <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
