@@ -1,29 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import pyodbc
-
-
-#
-# def connect_to_db():
-#     server = '172.17.0.2,1433'
-#     db = 'WaterCrisisDB'
-#     user = 'sa'
-#     pw = 'edsa@2019'
-#
-#     # Specify the ODBC driver, server name, database, etc. directly
-#     con = pyodbc.connect(
-#         r'DRIVER={ODBC Driver 17 for SQL Server};' +
-#         'SERVER={};database={};UID={};PWD={};'.format(server, db, user, pw))
-#
-#     return con
-#
-#
-# def close_db_connection(conn):
-#     try:
-#         conn.close()
-#     except Exception as e:
-#         print(str(e))
 
 
 def load_dam_data(file):
@@ -98,7 +75,8 @@ plt.show()
 major_dam_order = list(dam_levels[dam_levels['dam_class'] == 'Major Dam']
                        .groupby('dam_name')
                        .mean()['Max_dam_capacity_ML']
-                       .sort_values(ascending=True))
+                       .sort_values(ascending=False).index)
+print(major_dam_order)
 
 # Dam levels over time.
 # Filter dam class on Major Dam, group by Year, then look at averages over time.
@@ -112,4 +90,70 @@ dam_levels[dam_levels['dam_class'] == 'Major Dam']\
     .groupby('t_year')\
     .mean()['percentage_capacity']\
     .plot(kind='line', title='Average % Capacity for Major Dams over time', figsize=(10, 6), ylim=(0, 1))
+plt.show()
+
+"""
+Display major dams doing the best and worst by looking at the current percentage capacity.
+Apply multiple filters (latest date + major dam) and then group by dam name.
+"""
+latest_date = dam_levels.max()[0]
+ldo = dam_levels[(dam_levels['t_date'] == latest_date) & (dam_levels['dam_class'] == 'Major Dam')]\
+    .groupby('dam_name')\
+    .mean()['percentage_capacity']\
+    .sort_values()
+print(ldo)
+
+# Visualise using a horizontal bar chart
+dam_levels[(dam_levels['t_date'] == latest_date) & (dam_levels['dam_class'] == 'Major Dam')]\
+    .groupby('dam_name')\
+    .mean()['percentage_capacity']\
+    .sort_values()\
+    .plot(kind='barh', title='Current % Capacity for Major Dams', figsize=(10, 6), ylim=(0, 1))
+plt.show()
+
+"""
+Looking at a single data point does not provide all the insight.
+This is where distribution comes in.
+What do you guess the dam level distribution looks like?
+"""
+dam_levels[dam_levels['dam_class'] == 'Major Dam']['percentage_capacity']\
+    .hist(figsize=(10, 6))
+plt.suptitle('Histogram of dam level capacity', x=0.5, y=.95, ha='center', fontsize='x-large')
+plt.show()
+
+"""
+From CINDY, a good way to analyse numerical variables be category is the box plot.
+Box plot elements:
+Upper extreme, Upper Quartile, Median, Lower Quartile, Lower Extreme, Outlier/Single Data point
+"""
+fig, ax = plt.subplots(figsize=(10, 10))
+sns.boxplot(x='dam_name',
+            y='percentage_capacity',
+            data=dam_levels[dam_levels['dam_class'] == 'Major Dam'],
+            order=major_dam_order,
+            ax=ax)
+ax.set_title('Box Plots: Distribution of dam level by dam name')
+plt.grid(False)
+plt.xticks(rotation=90)
+plt.show()
+
+"""
+From the analysis, we can see that Theewaterskloof has the lowest percentage.
+Moving forward, our analysis will be based on this major dam.
+"""
+twk_df = dam_levels[dam_levels['dam_name'] == 'THEEWATERSKLOOF']
+print(twk_df.head())
+
+# Display date when the dam was the lowest and how low it was
+print(twk_df.sort_values(by='percentage_capacity').iloc[0])
+
+# Display what it's like on the latest date in the data
+print(twk_df.sort_values(by='t_date', ascending=False).iloc[0])
+
+# Percentage capacity over time for the Theewaterskloof dam
+print(twk_df.groupby('t_date').mean()['percentage_capacity'])
+
+# Plot the percentage capacity on a bar chart
+twk_df.groupby('t_year').mean()['percentage_capacity']\
+    .plot(kind='line', title='Average % Capacity for THEEWATERSKLOOF over time', figsize=(10, 6), ylim=(0, 1))
 plt.show()
