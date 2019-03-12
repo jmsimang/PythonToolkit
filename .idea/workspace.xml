@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d051b83-7f99-48a0-a317-f70583c96c90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jmsimang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/jmsimang.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,8 +100,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="342">
-                <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
               </first_editor>
               <second_editor />
             </state>
@@ -164,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-3" />
     <option name="y" value="26" />
     <option name="width" value="652" />
@@ -428,7 +427,7 @@
       <workItem from="1551882790135" duration="958000" />
       <workItem from="1551883864445" duration="621000" />
       <workItem from="1552123576212" duration="3203000" />
-      <workItem from="1552378296459" duration="15600000" />
+      <workItem from="1552378296459" duration="16176000" />
     </task>
     <task id="LOCAL-00001" summary="Added recursion and searching exercises">
       <created>1551366630305</created>
@@ -448,7 +447,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92353000" />
+    <option name="totallyTimeSpent" value="92929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="26" width="1372" height="719" extended-state="6" />
@@ -728,8 +727,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="342">
-            <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
