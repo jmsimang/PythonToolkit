@@ -1,43 +1,59 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import pyodbc as pyodbc
+import pyodbc
 
 
 def connect_to_db():
-    # Driver={/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.3.so.1.1}
     server = '172.17.0.2,1433'
     db = 'WaterCrisisDB'
     user = 'sa'
     pw = 'edsa@2019'
+
     # Specify the ODBC driver, server name, database, etc. directly
-    con = pyodbc.connect(r'DRIVER={ODBC Driver 17 for SQL Server};SERVER=' + server +
-                         ';database=' + db + ';UID=' + user + ';PWD=' + pw + ';')
-    # Create a cursor from the connection
-    #   cursor = con.cursor()
+    con = pyodbc.connect(
+        r'DRIVER={ODBC Driver 17 for SQL Server};' +
+        'SERVER={};database={};UID={};PWD={};'.format(server, db, user, pw))
+
     return con
 
 
-def plot_population(tablename):
-    # cursor = connect_to_db()
-    # Select statement to retrieve all data from a specified table
-    # cursor.execute('SELECT YEAR([population review date]) AS Year, population AS Population FROM ' + tablename)
-    # rows = cursor.fetchall()
-    # print(rows)
+def close_db_connection(conn):
+    try:
+        conn.close()
+    except Exception as e:
+        print(str(e))
+
+
+def plot_world_bank_data():
     # Create a connection to the database
     connection = connect_to_db()
+
     data = pd.read_sql_query('SELECT YEAR([population review date]) AS Year, population AS Population FROM ' +
-                             tablename, connection)
+                             'PopulationDataAsPerWorldReview', connection)
     print(data)
-    # query = 'SELECT YEAR([population review date]) AS Year, population AS Population FROM ' + tablename
-    # population_reader = pd.read_sql(query, cursor)
-    # print(population_reader)
-    # data = pd.DataFrame()
-    # for df_population in population_reader:
-    #     data = data.append(df_population)
-    # print(data)
+
     data.plot(kind='scatter', x='Year', y='Population')
     plt.show()
-    connection.close()
+
+    # Close db connection
+    close_db_connection(connection)
 
 
-plot_population('PopulationDataAsPerWorldReview')
+def plot_census_data():
+    # Create a connection to the database
+    connection = connect_to_db()
+
+    query = 'SELECT Year([population review date]) AS Year, population AS Population FROM PopulationDataAsPerCensus'
+    data_2 = pd.read_sql(query, connection)
+
+    print(data_2)
+
+    data_2.plot(kind='scatter', x='Year', y='Population')
+    plt.show()
+
+    # Close db connection
+    close_db_connection(connection)
+
+
+plot_world_bank_data()
+plot_census_data()
