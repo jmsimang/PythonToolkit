@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d051b83-7f99-48a0-a317-f70583c96c90" name="Default Changelist" comment="Exploratory analysis on football player attribute data added.">
-      <change afterPath="$PROJECT_DIR$/exploratory-analysis/exploratory_football_players.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jmsimang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/jmsimang.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exploratory-analysis/exploration_dam_levels.py" beforeDir="false" afterPath="$PROJECT_DIR$/exploratory-analysis/exploration_dam_levels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/useful_functions/plot_dam_levels.py" beforeDir="false" afterPath="$PROJECT_DIR$/useful_functions/plot_dam_levels.py" afterDir="false" />
-    </list>
+    <list default="true" id="4d051b83-7f99-48a0-a317-f70583c96c90" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -401,7 +395,7 @@
       <workItem from="1551882790135" duration="958000" />
       <workItem from="1551883864445" duration="621000" />
       <workItem from="1552123576212" duration="3203000" />
-      <workItem from="1552378296459" duration="25707000" />
+      <workItem from="1552378296459" duration="26081000" />
     </task>
     <task id="LOCAL-00001" summary="Added recursion and searching exercises">
       <created>1551366630305</created>
@@ -417,20 +411,26 @@
       <option name="project" value="LOCAL" />
       <updated>1551787944615</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Exploratory analysis on football player attribute data added.">
+      <created>1552404546471</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552404546471</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102460000" />
+    <option name="totallyTimeSpent" value="102834000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="26" width="1372" height="719" extended-state="6" />
-    <editor active="true" />
+    <frame x="-3" y="26" width="1372" height="719" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18051359" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18051359" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.3294702" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3294702" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294702" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.17384106" />
