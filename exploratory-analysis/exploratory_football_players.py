@@ -7,11 +7,11 @@ def load_players_data(f):
     :param f: File path / location
     :return: A DataFrame with the loaded data
     """
-    df = pd.read_csv(f, index_col='Name', encoding='latin-1')
+    df = pd.read_csv(f, index_col='Name', encoding='latin-1', low_memory=False)
     return df
 
 
-file = '../data-files/football_players-a-26.csv'
+file = '~/Desktop/PythonPrograms/PythonToolkitPart1/data-files/football_players-a-26.csv'
 # Load csv file into DataFrame
 players = load_players_data(file)
 print(players.head())

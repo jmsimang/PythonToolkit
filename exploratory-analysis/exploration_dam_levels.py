@@ -16,7 +16,7 @@ def load_dam_data(file):
     return df
 
 
-dam_csv = '../data-files/dam_levels-a-346.csv'
+dam_csv = './data-files/dam_levels-a-346.csv'
 dam_levels = load_dam_data(dam_csv)
 
 # inspect dam_levels DataFrame
@@ -75,6 +75,12 @@ print(dc)
 dam_levels[dam_levels['dam_class'] == 'Major Dam'].groupby('dam_name').mean()['Max_dam_capacity_ML'] \
     .sort_values(ascending=True) \
     .plot(kind='barh', title='Capacity by Dam in ML', figsize=(10, 6))
+plt.show()
+
+# Plot dam capacity on a pie chart, by dam name, and use the mean()
+dam_levels[dam_levels['dam_class'] == 'Major Dam'].groupby('dam_name').mean()['Max_dam_capacity_ML'] \
+    .sort_values(ascending=False) \
+    .plot.pie(title='Capacity by Dam in ML', figsize=(10, 6))
 plt.show()
 
 # For future charting - Store Major Dam names order

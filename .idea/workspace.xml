@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d051b83-7f99-48a0-a317-f70583c96c90" name="Default Changelist" comment="" />
+    <list default="true" id="4d051b83-7f99-48a0-a317-f70583c96c90" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pandas/all_share_index_quantitative.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/predict-python-data-structures.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Jabulani.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Jabulani.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jmsimang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/jmsimang.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exploratory-analysis/exploration_dam_levels.py" beforeDir="false" afterPath="$PROJECT_DIR$/exploratory-analysis/exploration_dam_levels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exploratory-analysis/exploratory_football_players.py" beforeDir="false" afterPath="$PROJECT_DIR$/exploratory-analysis/exploratory_football_players.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +66,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/useful_functions/plot_dam_levels.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exploratory-analysis/exploratory_football_players.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+            <state relative-caret-position="46">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exploratory-analysis/exploration_dam_levels.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="131" column="9" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="9" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pandas/all_share_index_quantitative.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="120" column="10" lean-forward="true" selection-start-line="120" selection-start-column="10" selection-end-line="120" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#163#1510#0" />
               </folding>
             </state>
           </provider>
@@ -85,6 +115,10 @@
       <find>key</find>
       <find>ascending</find>
       <find>max</find>
+      <find>index</find>
+      <find>values</find>
+      <find>def</find>
+      <find>hist</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,9 +162,10 @@
         <option value="$PROJECT_DIR$/useful_functions/plot_population.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/exploratory-analysis/exploration_dam_levels.py" />
-        <option value="$PROJECT_DIR$/exploratory-analysis/exploratory_football_players.py" />
         <option value="$PROJECT_DIR$/useful_functions/plot_dam_levels.py" />
+        <option value="$PROJECT_DIR$/exploratory-analysis/exploratory_football_players.py" />
+        <option value="$PROJECT_DIR$/exploratory-analysis/exploration_dam_levels.py" />
+        <option value="$PROJECT_DIR$/pandas/all_share_index_quantitative.py" />
       </list>
     </option>
   </component>
@@ -156,12 +191,12 @@
             <path>
               <item name="PythonToolkitPart1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="data-files" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="exploratory-analysis" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="PythonToolkitPart1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="exploratory-analysis" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="pandas" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -175,6 +210,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.CVS" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings>
+        <option name="useSoftWraps" value="true" />
+      </console-settings>
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="OPEN_URL_DIALOG">
@@ -282,6 +324,9 @@
       <module name="PythonToolkitPart1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exploratory-analysis" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -395,7 +440,9 @@
       <workItem from="1551882790135" duration="958000" />
       <workItem from="1551883864445" duration="621000" />
       <workItem from="1552123576212" duration="3203000" />
-      <workItem from="1552378296459" duration="26081000" />
+      <workItem from="1552378296459" duration="26418000" />
+      <workItem from="1552475593663" duration="6804000" />
+      <workItem from="1552498939858" duration="14084000" />
     </task>
     <task id="LOCAL-00001" summary="Added recursion and searching exercises">
       <created>1551366630305</created>
@@ -422,15 +469,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102834000" />
+    <option name="totallyTimeSpent" value="124059000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="26" width="1372" height="719" extended-state="7" />
+    <frame x="-3" y="26" width="1372" height="719" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18051359" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18277946" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3294702" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294702" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.17384106" />
@@ -442,13 +488,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294702" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.33112583" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3294702" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.4089404" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.23509933" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.3294702" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.31117824" />
-      <window_info anchor="right" id="R Packages" order="4" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.489426" />
+      <window_info anchor="right" id="R Packages" order="4" weight="0.32930514" />
       <window_info anchor="right" id="Database" order="5" weight="0.2439577" />
       <window_info anchor="right" id="R Graphics" order="6" />
       <window_info anchor="right" x="0" y="0" width="77" height="667" id="Documentation" order="7" side_tool="true" visible="true" weight="0.24664429" />
@@ -681,23 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exploratory-analysis/exploratory_football_players.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exploratory-analysis/exploration_dam_levels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="104" column="28" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/useful_functions/plot_population.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -714,6 +744,34 @@
           <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exploratory-analysis/exploratory_football_players.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exploratory-analysis/exploration_dam_levels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="131" column="9" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pandas/all_share_index_quantitative.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="120" column="10" lean-forward="true" selection-start-line="120" selection-start-column="10" selection-end-line="120" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#163#1510#0" />
           </folding>
         </state>
       </provider>
