@@ -14,10 +14,12 @@
       <w>genstat</w>
       <w>iloc</w>
       <w>klerksdorp</w>
+      <w>lxml</w>
       <w>matplotlib</w>
       <w>ndarray</w>
       <w>theewaterkloof</w>
       <w>theewaterskloof</w>
+      <w>winequality</w>
       <w>xmin</w>
     </words>
   </dictionary>
