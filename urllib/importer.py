@@ -12,8 +12,9 @@ html_doc = r.text
 soup = BeautifulSoup(html_doc, features="lxml")
 pretty_soup = soup.prettify()
 # print(pretty_soup)
+
 # Turn html into data
-page_title = soup.title.string
+page_title = soup.title
 print(page_title)
 page_text = soup.get_text()
 print(page_text)

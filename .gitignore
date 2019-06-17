@@ -1,2 +1,5 @@
 # ignore all python byte code files
-**/__pycache__/*.pyc
+__pycache__/
+**/__pycache__/
+*.pyc
+.idea
